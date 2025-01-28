@@ -10,7 +10,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
+  int lotteryNumber = 0;
+  String message = "Welcome! the winning number is 3";
   @override
   Widget build(BuildContext context) {
 
