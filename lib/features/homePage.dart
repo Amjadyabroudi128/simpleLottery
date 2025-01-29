@@ -11,7 +11,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   List<int> lotteryNumber = [];
-  String message = "Welcome! the winning number is 3";
+  String message = "the winning number is 3";
 
   void theLotteryNumber() {
     setState(() {
@@ -26,8 +26,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+             Text(
+               message, style: TextStyle(fontSize: 18),
             ),
           ],
         ),
