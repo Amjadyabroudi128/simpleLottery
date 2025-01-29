@@ -10,14 +10,19 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int lotteryNumber = 0;
+  List<int> lotteryNumber = [];
   String message = "Welcome! the winning number is 3";
+
+  void theLotteryNumber() {
+    setState(() {
+      lotteryNumber = [1,2,3,4,5,6,7];
+    });
+  }
   @override
   Widget build(BuildContext context) {
 
     return Scaffold(
       body: Center(
-
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
