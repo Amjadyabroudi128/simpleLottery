@@ -17,7 +17,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void theLotteryNumber() {
     setState(() {
       lotteryNumber = [1,2,3,4,5,6,7];
-      lotteryNumber.contains(3) ? message = appStrings.Win : message = "Try again next time";
+      lotteryNumber.contains(3) ? message = appStrings.Win : message = appStrings.tryAgain;
 
     });
   }
