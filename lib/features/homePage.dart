@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottery/components/Strings.dart';
+import 'package:lottery/components/styles.dart';
 import 'package:lottery/features/widgets/messageText.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -30,10 +31,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-             messageText(message: message),
+            messageText(message: message)
+             // messageText(message: message),
           ],
         ),
       ),
     );
   }
 }
+
