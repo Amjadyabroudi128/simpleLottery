@@ -12,7 +12,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   List<int> lotteryNumber = [];
-  String message = "the winning number is 3";
+  String message = appStrings.winNumber;
 
   void theLotteryNumber() {
     setState(() {
