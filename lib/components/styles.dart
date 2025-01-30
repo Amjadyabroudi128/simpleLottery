@@ -4,7 +4,10 @@
 import 'package:flutter/material.dart';
 
 class textStyles {
-  static TextStyle messageStyle = TextStyle(
-    fontSize: 18,
-  );
+  TextStyle myText (Color color, double fontSize) {
+    return TextStyle(
+      color: color,
+      fontSize: fontSize
+    );
+  }
  }
