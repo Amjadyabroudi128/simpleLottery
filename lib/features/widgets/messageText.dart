@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../components/styles.dart';
+
 class messageText extends StatelessWidget {
   const messageText({
     super.key,
@@ -11,7 +13,7 @@ class messageText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      message, style: TextStyle(fontSize: 18),
+      message, style: textStyles.messageStyle,
     );
   }
 }
