@@ -31,7 +31,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            messageText(message: message)
+            messageText(message: message),
+             IconButton(
+               icon: Icon(Icons.refresh),
+               onPressed: (){
+                 theLotteryNumber();
+               },
+             )
              // messageText(message: message),
           ],
         ),
