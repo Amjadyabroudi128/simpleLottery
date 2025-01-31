@@ -3,5 +3,5 @@
 import 'package:flutter/material.dart';
 
 class myIcons {
-  static Icon refresh = Icon(Icons.refresh_outlined, size: 18, color: Colors.blueAccent,);
+  static Icon refresh = Icon(Icons.refresh_outlined, size: 25, color: Colors.blueAccent,);
  }
