@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottery/components/Strings.dart';
+import 'package:lottery/components/icons.dart';
 import 'package:lottery/components/styles.dart';
 import 'package:lottery/features/widgets/messageText.dart';
 
@@ -33,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             messageText(message: message),
              IconButton(
-               icon: Icon(Icons.refresh),
+               icon: myIcons.refresh,
                onPressed: (){
                  theLotteryNumber();
                },
