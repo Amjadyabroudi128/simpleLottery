@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'icons.dart';
+import '../../components/icons.dart';
 
 class lotteryBtn extends StatelessWidget {
   final VoidCallback onPressed;

@@ -3,7 +3,7 @@ import 'package:lottery/components/Strings.dart';
 import 'package:lottery/components/icons.dart';
 import 'package:lottery/features/widgets/messageText.dart';
 
-import '../components/iconBtn.dart';
+import 'widgets/iconBtn.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
