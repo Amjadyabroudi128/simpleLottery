@@ -19,27 +19,20 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void theLotteryNumber() {
     setState(() {
-      lotteryNumber = [1,2,3,4,5,6,7];
+      lotteryNumber = [1, 2, 3, 4, 5, 6, 7];
       lotteryNumber.contains(3) ? message = appStrings.Win : message = appStrings.tryAgain;
-
     });
   }
+
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             messageText(message: message),
-             IconButton(
-               icon: myIcons.refresh,
-               onPressed: (){
-                 theLotteryNumber();
-               },
-             )
-             // messageText(message: message),
+            lotteryBtn(onPressed: theLotteryNumber),
           ],
         ),
       ),
@@ -47,3 +40,18 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+class lotteryBtn extends StatelessWidget {
+  final VoidCallback onPressed;
+  const lotteryBtn({
+    super.key,
+    required this.onPressed,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      icon: myIcons.refresh,
+      onPressed: onPressed,
+    );
+  }
+}
