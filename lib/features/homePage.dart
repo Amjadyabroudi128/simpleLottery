@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:lottery/components/Strings.dart';
 import 'package:lottery/components/icons.dart';
-import 'package:lottery/components/styles.dart';
 import 'package:lottery/features/widgets/messageText.dart';
+
+import '../components/iconBtn.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -40,18 +41,3 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class lotteryBtn extends StatelessWidget {
-  final VoidCallback onPressed;
-  const lotteryBtn({
-    super.key,
-    required this.onPressed,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return IconButton(
-      icon: myIcons.refresh,
-      onPressed: onPressed,
-    );
-  }
-}
