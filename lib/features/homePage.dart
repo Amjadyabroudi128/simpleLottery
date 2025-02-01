@@ -33,7 +33,16 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             messageText(message: message),
-            lotteryBtn(onPressed: theLotteryNumber, myIcon: myIcons.refresh,),
+            Container(
+              width: 76,
+              height: 37,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                color: Colors.black
+              ),
+              // color: Colors.black,
+                child: lotteryBtn(onPressed: theLotteryNumber, myIcon: myIcons.refresh,)
+            ),
           ],
         ),
       ),
