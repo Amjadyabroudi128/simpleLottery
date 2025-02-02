@@ -33,9 +33,10 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             messageText(message: message),
+            SizedBox(height: 5,),
             Container(
               width: MediaQuery.of(context).size.width / 4.9,
-              height: 37,
+              height: MediaQuery.of(context).size.height / 23,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
                 color: Colors.black
