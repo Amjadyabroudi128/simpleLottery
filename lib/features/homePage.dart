@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             messageText(message: message),
             Container(
-              width: 76,
+              width: MediaQuery.of(context).size.width / 4.9,
               height: 37,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
