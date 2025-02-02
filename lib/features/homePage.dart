@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottery/components/Strings.dart';
+import 'package:lottery/components/containerBorders.dart';
 import 'package:lottery/components/icons.dart';
 import 'package:lottery/features/widgets/messageText.dart';
 
@@ -37,10 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               width: MediaQuery.of(context).size.width / 4.9,
               height: MediaQuery.of(context).size.height / 23,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Colors.black
-              ),
+              decoration: containerBorder.cDecoration,
               // color: Colors.black,
                 child: lotteryBtn(onPressed: theLotteryNumber, myIcon: myIcons.refresh,)
             ),
