@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lottery/components/Strings.dart';
 import 'package:lottery/components/containerBorders.dart';
 import 'package:lottery/components/icons.dart';
+import 'package:lottery/components/sizedBox.dart';
 import 'package:lottery/features/widgets/messageText.dart';
 
 import 'widgets/iconBtn.dart';
@@ -34,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             messageText(message: message),
-            SizedBox(height: 5,),
+            spaceBox(height: 6,),
             Container(
               width: containerBorder.myWidth(context),
               height: containerBorder.myHeight(context),
