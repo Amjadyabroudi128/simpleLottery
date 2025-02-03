@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(height: 5,),
             Container(
               width: containerBorder.myWidth(context),
-              height: MediaQuery.of(context).size.height / 23,
+              height: containerBorder.myHeight(context),
               decoration: containerBorder.cDecoration,
               // color: Colors.black,
                 child: lotteryBtn(onPressed: theLotteryNumber, myIcon: myIcons.refresh,)
