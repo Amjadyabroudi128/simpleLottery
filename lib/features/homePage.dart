@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:lottery/components/Strings.dart';
 import 'package:lottery/components/containerBorders.dart';
@@ -17,13 +19,14 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<int> lotteryNumber = [];
+  List<int> lotteryNumber = [1, 2, 3, 4, 5, 6, 7];
+  int currentNumber = 0;
   String message = appStrings.winNumber;
 
   void theLotteryNumber() {
     setState(() {
-      lotteryNumber = [1, 2, 3, 4, 5, 6, 7];
-      lotteryNumber.contains(3) ? message = appStrings.Win : message = appStrings.tryAgain;
+      currentNumber = lotteryNumber[Random().nextInt(lotteryNumber.length)];
+      message = currentNumber == 3 ? appStrings.Win : appStrings.tryAgain;
     });
   }
 
