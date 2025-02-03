@@ -6,4 +6,7 @@ class containerBorder {
       borderRadius: BorderRadius.circular(12),
       color: myColors.containerClr
   );
+  static double myWidth(BuildContext context) {
+    return MediaQuery.of(context).size.width / 4.9;
+  }
  }
