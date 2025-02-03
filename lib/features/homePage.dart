@@ -40,7 +40,6 @@ class _MyHomePageState extends State<MyHomePage> {
               width: containerBorder.myWidth(context),
               height: containerBorder.myHeight(context),
               decoration: containerBorder.cDecoration,
-              // color: Colors.black,
                 child: lotteryBtn(onPressed: theLotteryNumber, myIcon: myIcons.refresh,)
             ),
           ],
