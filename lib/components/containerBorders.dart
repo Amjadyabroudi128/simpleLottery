@@ -9,4 +9,7 @@ class containerBorder {
   static double myWidth(BuildContext context) {
     return MediaQuery.of(context).size.width / 4.9;
   }
+  static double myHeight(BuildContext context) {
+    return MediaQuery.of(context).size.width / 23;
+  }
  }
