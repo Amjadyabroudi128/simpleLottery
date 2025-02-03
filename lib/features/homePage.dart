@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
             messageText(message: message),
             SizedBox(height: 5,),
             Container(
-              width: MediaQuery.of(context).size.width / 4.9,
+              width: containerBorder.myWidth(context),
               height: MediaQuery.of(context).size.height / 23,
               decoration: containerBorder.cDecoration,
               // color: Colors.black,
