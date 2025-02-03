@@ -26,7 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void theLotteryNumber() {
     setState(() {
       currentNumber = lotteryNumber[Random().nextInt(lotteryNumber.length)];
-      message = currentNumber == 3 ? appStrings.Win : appStrings.tryAgain;
+      currentNumber == 3 ? message = appStrings.Win : message = appStrings.tryAgain;
     });
   }
 
