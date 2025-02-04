@@ -50,6 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
+            spaceBox(height: 6,),
             Container(
               width: containerBorder.myWidth(context),
               height: containerBorder.myHeight(context),
