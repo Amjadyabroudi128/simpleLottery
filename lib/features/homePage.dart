@@ -5,6 +5,7 @@ import 'package:lottery/components/Strings.dart';
 import 'package:lottery/components/containerBorders.dart';
 import 'package:lottery/components/icons.dart';
 import 'package:lottery/components/sizedBox.dart';
+import 'package:lottery/features/themes/colors.dart';
 import 'package:lottery/features/widgets/messageText.dart';
 
 import 'widgets/iconBtn.dart';
@@ -43,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 150, // Set desired width
               height: 40, // Set desired height
               child: Card(
-                color: Colors.grey[350],
+                color: myColors.cardColor,
                 child: Center(
                   child: Text("Hello"),
                 ),
