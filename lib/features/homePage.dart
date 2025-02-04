@@ -39,6 +39,12 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             messageText(message: message),
             spaceBox(height: 6,),
+            Card(
+              color: Colors.grey[300],
+              child: Center(
+                child: Text("Hello"),
+              ),
+            ),
             Container(
               width: containerBorder.myWidth(context),
               height: containerBorder.myHeight(context),
