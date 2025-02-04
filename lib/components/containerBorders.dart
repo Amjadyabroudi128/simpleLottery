@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:lottery/components/appSizeHelper.dart';
 import 'package:lottery/features/themes/colors.dart';
 
 class containerBorder {
   static Decoration cDecoration = BoxDecoration(
-      borderRadius: BorderRadius.circular(12),
+      borderRadius: BorderRadius.circular(componentSize.radiusSize),
       color: myColors.containerClr
   );
   static double myWidth(BuildContext context) {
