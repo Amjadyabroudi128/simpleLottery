@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottery/features/themes/appTheme.dart';
 
 import 'features/homePage.dart';
 
@@ -13,9 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: appTheme.myTheme,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-      ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
