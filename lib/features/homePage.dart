@@ -39,9 +39,11 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             messageText(message: message),
             spaceBox(height: 6,),
-            Card(
-              color: Colors.grey[350],
-              child: IntrinsicWidth(
+            SizedBox(
+              width: 150, // Set desired width
+              height: 40, // Set desired height
+              child: Card(
+                color: Colors.grey[350],
                 child: Center(
                   child: Text("Hello"),
                 ),
