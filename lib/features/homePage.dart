@@ -40,9 +40,11 @@ class _MyHomePageState extends State<MyHomePage> {
             messageText(message: message),
             spaceBox(height: 6,),
             Card(
-              color: Colors.grey[300],
-              child: Center(
-                child: Text("Hello"),
+              color: Colors.grey[350],
+              child: IntrinsicWidth(
+                child: Center(
+                  child: Text("Hello"),
+                ),
               ),
             ),
             Container(
