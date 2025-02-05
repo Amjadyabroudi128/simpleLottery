@@ -40,8 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             messageText(message: message),
             spaceBox(height: 6,),
-            SizedBox(
-              width: 150, // Set desired width
+             SizedBox(
+              width: containerBorder.boxWidth(context), // Set desired width
               height: 40, // Set desired height
               child: Card(
                 child: Center(
