@@ -44,7 +44,6 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 150, // Set desired width
               height: 40, // Set desired height
               child: Card(
-                color: myColors.cardColor,
                 child: Center(
                   child: Text("Hello"),
                 ),
