@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
             spaceBox(height: 6,),
              SizedBox(
               width: containerBorder.boxWidth(context), // Set desired width
-              height: 40, // Set desired height
+              height: containerBorder.boxHeight(context), // Set desired height
               child: Card(
                 child: Center(
                   child: Text("Hello"),
