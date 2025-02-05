@@ -5,7 +5,6 @@ import 'package:lottery/components/Strings.dart';
 import 'package:lottery/components/containerBorders.dart';
 import 'package:lottery/components/icons.dart';
 import 'package:lottery/components/sizedBox.dart';
-import 'package:lottery/features/themes/colors.dart';
 import 'package:lottery/features/widgets/messageText.dart';
 
 import 'widgets/iconBtn.dart';
