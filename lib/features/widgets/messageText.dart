@@ -14,7 +14,6 @@ class messageText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       message,  style: textStyles().myText(myColors.textColor, 19),
-
     );
   }
 }
