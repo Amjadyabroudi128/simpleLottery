@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: currentNumber == 3
                               ? TextButton(
                             onPressed: theLotteryNumber,
-                            child: Text("GO Again", style: TextStyle(color: Colors.white)),
+                            child: Text(appStrings.Again, style: TextStyle(color: Colors.white)),
                           )
                               : lotteryBtn(
                             onPressed: theLotteryNumber,
