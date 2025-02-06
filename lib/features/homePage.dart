@@ -41,35 +41,39 @@ class _MyHomePageState extends State<MyHomePage> {
             spaceBox(height: 6,),
              SizedBox(
               width: containerBorder.boxWidth(context), // Set desired width
-              // height: containerBorder.boxHeight(context), // Set desired height
-              child: Card(
-                child: Column(
-                  children: [
-                    Center(
-                      child: Text(
-                        currentNumber.toString(),
-                        style: TextStyle(
-                          fontSize: 22,
-                          color: currentNumber == 3 ? Colors.green : null,
+              child: IntrinsicHeight(
+                child: Card(
+                  child: Column(
+                    children: [
+                      Center(
+                        child: Text(
+                          currentNumber.toString(),
+                          style: TextStyle(
+                            fontSize: 22,
+                            color: currentNumber == 3 ? Colors.green : null,
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(height: 6,),
-                    Container(
-                      width: containerBorder.myWidth(context),
-                      height: containerBorder.myHeight(context),
-                      decoration: containerBorder.cDecoration,
-                      child: currentNumber == 3
-                          ? TextButton(
-                        onPressed: theLotteryNumber,
-                        child: Text("GO Again", style: TextStyle(color: Colors.white)),
-                      )
-                          : lotteryBtn(
-                        onPressed: theLotteryNumber,
-                        myIcon: myIcons.refresh,
+                      SizedBox(height: 6,),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          width: containerBorder.myWidth(context),
+                          height: containerBorder.myHeight(context),
+                          decoration: containerBorder.cDecoration,
+                          child: currentNumber == 3
+                              ? TextButton(
+                            onPressed: theLotteryNumber,
+                            child: Text("GO Again", style: TextStyle(color: Colors.white)),
+                          )
+                              : lotteryBtn(
+                            onPressed: theLotteryNumber,
+                            myIcon: myIcons.refresh,
+                          ),
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               )
              )
