@@ -44,7 +44,9 @@ class _MyHomePageState extends State<MyHomePage> {
               height: containerBorder.boxHeight(context), // Set desired height
               child: Card(
                 child: Center(
-                  child: Text(currentNumber.toString(), style: TextStyle(fontSize: 22),),
+                  child: Text(currentNumber.toString(), style: TextStyle(fontSize: 22,
+                    color: currentNumber == 3 ? Colors.green : null
+                  ),),
                 ),
               ),
             ),
