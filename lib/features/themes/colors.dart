@@ -6,4 +6,5 @@ class myColors {
   static Color refreshClr = Colors.blueAccent;
   static Color containerClr = Colors.black87;
   static Color? cardColor = Colors.grey[350];
+  static Color winColor = Colors.green;
 }
