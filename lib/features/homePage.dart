@@ -5,6 +5,7 @@ import 'package:lottery/components/Strings.dart';
 import 'package:lottery/components/containerBorders.dart';
 import 'package:lottery/components/icons.dart';
 import 'package:lottery/components/sizedBox.dart';
+import 'package:lottery/features/themes/colors.dart';
 import 'package:lottery/features/widgets/messageText.dart';
 
 import 'widgets/iconBtn.dart';
@@ -50,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           currentNumber.toString(),
                           style: TextStyle(
                             fontSize: 22,
-                            color: currentNumber == 3 ? Colors.green : null,
+                            color: currentNumber == 3 ? myColors.winColor : null,
                           ),
                         ),
                       ),
