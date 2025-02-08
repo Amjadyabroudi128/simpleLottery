@@ -7,4 +7,5 @@ class myColors {
   static Color containerClr = Colors.black87;
   static Color? cardColor = Colors.grey[350];
   static Color winColor = Colors.green;
+  static Color again = Colors.white;
 }
