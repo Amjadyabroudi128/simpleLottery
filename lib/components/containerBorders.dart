@@ -19,4 +19,5 @@ class containerBorder {
   static double boxHeight(BuildContext context) {
     return  MediaQuery.of(context).size.height * 0.05;
   }
+  static EdgeInsets myPadding = EdgeInsets.all(8.0);
  }
