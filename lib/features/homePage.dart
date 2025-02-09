@@ -8,6 +8,7 @@ import 'package:lottery/components/sizedBox.dart';
 import 'package:lottery/features/themes/colors.dart';
 import 'package:lottery/features/widgets/messageText.dart';
 
+import '../components/styles.dart';
 import 'widgets/iconBtn.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -49,10 +50,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       Center(
                         child: Text(
                           currentNumber.toString(),
-                          style: TextStyle(
-                            fontSize: 22,
-                            color: currentNumber == 3 ? myColors.winColor : null,
-                          ),
+                          style: textStyles().myText(currentNumber == 3 ? myColors.winColor : null,22),
+                          // style: TextStyle(
+                          //   fontSize: 22,
+                          //   color: currentNumber == 3 ? myColors.winColor : null,
+                          // ),
                         ),
                       ),
                       SizedBox(height: 6,),
