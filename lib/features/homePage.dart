@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:lottery/components/Strings.dart';
+import 'package:lottery/components/appSizeHelper.dart';
 import 'package:lottery/components/containerBorders.dart';
 import 'package:lottery/components/icons.dart';
 import 'package:lottery/components/sizedBox.dart';
@@ -50,11 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Center(
                         child: Text(
                           currentNumber.toString(),
-                          style: textStyles().myText(currentNumber == 3 ? myColors.winColor : null,22),
-                          // style: TextStyle(
-                          //   fontSize: 22,
-                          //   color: currentNumber == 3 ? myColors.winColor : null,
-                          // ),
+                          style: textStyles().myText(currentNumber == 3 ? myColors.winColor : null,componentSize.numbersize),
                         ),
                       ),
                       SizedBox(height: 6,),
