@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottery/components/appSizeHelper.dart';
 import 'package:lottery/features/themes/colors.dart';
 
 import '../../components/styles.dart';
@@ -13,7 +14,7 @@ class messageText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      message,  style: textStyles().myText(myColors.textColor, 19),
+      message,  style: textStyles().myText(myColors.textColor, componentSize.messageSize),
     );
   }
 }
