@@ -51,7 +51,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       Center(
                         child: Text(
                           currentNumber.toString(),
-                          style: textStyles().myText(currentNumber == 3 ? myColors.winColor : null,componentSize.numbersize),
+                          style: textStyles().myText(currentNumber == 3 ?
+                          myColors.winColor : null,componentSize.numbersize),
                         ),
                       ),
                       SizedBox(height: 6,),
