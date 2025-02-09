@@ -8,4 +8,5 @@ class myColors {
   static Color? cardColor = Colors.grey[350];
   static Color winColor = Colors.green;
   static Color again = Colors.white;
+  static Color nullClr = Colors.black87;
 }
