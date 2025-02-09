@@ -4,10 +4,10 @@
 import 'package:flutter/material.dart';
 
 class textStyles {
-  TextStyle myText (Color color, double fontSize) {
+  TextStyle myText(Color? color, double fontSize) {
     return TextStyle(
-      color: color,
-      fontSize: fontSize
+      color: color ?? Colors.black, //null
+      fontSize: fontSize,
     );
   }
  }
