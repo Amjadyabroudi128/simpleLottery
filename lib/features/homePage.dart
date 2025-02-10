@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: containerBorder.centre,
           children: <Widget>[
             messageText(message: message),
             spaceBox(height: 6,),
