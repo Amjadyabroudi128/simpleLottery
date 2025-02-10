@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:lottery/components/appSizeHelper.dart';
-import 'package:lottery/features/themes/colors.dart';
 
-import '../../components/styles.dart';
+import '../themes/colors.dart';
 
-class messageText extends StatelessWidget {
-   messageText({
+class textMessage extends StatelessWidget {
+  const textMessage({
     super.key,
     required this.message,
+    required this.currentNumber,
   });
+
   final String message;
+  final int currentNumber;
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      message,  style: textStyles().myText(myColors.textColor, componentSize.messageSize),
-    );
+    return Text(message,style: TextStyle(fontSize: 19,
+        color: currentNumber == 3 ? myColors.winColor : null ),);
   }
 }
