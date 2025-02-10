@@ -40,7 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: containerBorder.centre,
           children: <Widget>[
-            messageText(message: message),
+            textMessage(message: message, currentNumber: currentNumber),
+            // messageText(message: message),
             spaceBox(height: 6,),
              SizedBox(
               width: containerBorder.boxWidth(context), // Set desired width
@@ -82,6 +83,23 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
     );
+  }
+}
+
+class textMessage extends StatelessWidget {
+  const textMessage({
+    super.key,
+    required this.message,
+    required this.currentNumber,
+  });
+
+  final String message;
+  final int currentNumber;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(message,style: TextStyle(fontSize: 19,
+        color: currentNumber == 3 ? myColors.winColor : null ),);
   }
 }
 
