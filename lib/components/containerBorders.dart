@@ -20,4 +20,5 @@ class containerBorder {
     return  MediaQuery.of(context).size.height * 0.05;
   }
   static EdgeInsets myPadding = EdgeInsets.all(8.0);
+  static MainAxisAlignment centre = MainAxisAlignment.center;
  }
