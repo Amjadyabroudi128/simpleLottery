@@ -12,4 +12,10 @@ class textStyles {
       fontSize: fontSize,
     );
   }
+  TextStyle message(Color? color, double? fontSize,) {
+    return TextStyle(
+      color: color,
+      fontSize: fontSize,
+    );
+  }
  }
