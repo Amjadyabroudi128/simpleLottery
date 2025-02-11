@@ -41,7 +41,6 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: containerBorder.centre,
           children: <Widget>[
             textMessage(message: message, currentNumber: currentNumber),
-            // messageText(message: message),
             spaceBox(height: 6,),
             SizedBox(
                 width: containerBorder.boxWidth(context), // Set desired width
