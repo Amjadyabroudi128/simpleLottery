@@ -4,13 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:lottery/components/Strings.dart';
 import 'package:lottery/components/appSizeHelper.dart';
 import 'package:lottery/components/containerBorders.dart';
-import 'package:lottery/components/icons.dart';
 import 'package:lottery/components/sizedBox.dart';
 import 'package:lottery/features/themes/colors.dart';
+import 'package:lottery/features/widgets/lotteryButtn.dart';
 import 'package:lottery/features/widgets/messageText.dart';
 
 import '../components/styles.dart';
-import 'widgets/iconBtn.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -29,7 +28,8 @@ class _MyHomePageState extends State<MyHomePage> {
   void theLotteryNumber() {
     setState(() {
       currentNumber = lotteryNumber[Random().nextInt(lotteryNumber.length)];
-      currentNumber == 3 ? message = appStrings.Win : message = appStrings.tryAgain;
+      currentNumber == 3 ? message = appStrings.Win : message =
+          appStrings.tryAgain;
     });
   }
 
@@ -43,46 +43,44 @@ class _MyHomePageState extends State<MyHomePage> {
             textMessage(message: message, currentNumber: currentNumber),
             // messageText(message: message),
             spaceBox(height: 6,),
-             SizedBox(
-              width: containerBorder.boxWidth(context), // Set desired width
-              child: IntrinsicHeight(
-                child: Card(
-                  child: Column(
-                    children: [
-                      Center(
-                        child: Text(
-                          currentNumber.toString(),
-                          style: textStyles().myText(currentNumber == 3 ?
-                          myColors.winColor : null,componentSize.numbersize),
-                        ),
-                      ),
-                      SizedBox(height: 6,),
-                      Padding(
-                        padding: containerBorder.myPadding,
-                        child: Container(
-                          width: containerBorder.myWidth(context),
-                          height: containerBorder.myHeight(context),
-                          decoration: containerBorder.cDecoration,
-                          child: currentNumber == 3
-                              ? TextButton(
-                            onPressed: theLotteryNumber,
-                            child: Text(appStrings.Again, style: textStyles().myText(myColors.again, componentSize.textSize)),
-                          )
-                              : lotteryBtn(
-                            onPressed: theLotteryNumber,
-                            myIcon: myIcons.refresh,
+            SizedBox(
+                width: containerBorder.boxWidth(context), // Set desired width
+                child: IntrinsicHeight(
+                  child: Card(
+                    child: Column(
+                      children: [
+                        Center(
+                          child: Text(
+                            currentNumber.toString(),
+                            style: textStyles().myText(currentNumber == 3 ?
+                            myColors.winColor : null, componentSize.numbersize),
                           ),
                         ),
-                      ),
-                    ],
+                        SizedBox(height: 6,),
+                        Padding(
+                          padding: containerBorder.myPadding,
+                          child: Container(
+                            width: containerBorder.myWidth(context),
+                            height: containerBorder.myHeight(context),
+                            decoration: containerBorder.cDecoration,
+                            child: currentNumber == 3
+                                ? TextButton(
+                              onPressed: theLotteryNumber,
+                              child: Text(appStrings.Again,
+                                  style: textStyles().myText(
+                                      myColors.again, componentSize.textSize)),
+                            )
+                                : buildLotteryBtn(theLotteryNumber),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              )
-             )
-               ],
+                )
+            )
+          ],
         ),
       ),
     );
   }
 }
-
