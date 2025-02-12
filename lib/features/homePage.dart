@@ -63,12 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: containerBorder.myHeight(context),
                             decoration: containerBorder.cDecoration,
                             child: currentNumber == 3
-                                ? TextButton(
-                              onPressed: theLotteryNumber,
-                              child: Text(appStrings.Again,
-                                  style: textStyles().myText(
-                                      myColors.again, componentSize.textSize)),
-                            )
+                                ? buildTextButton()
                                 : buildLotteryBtn(theLotteryNumber),
                           ),
                         ),
@@ -80,6 +75,14 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+    );
+  }
+
+  TextButton buildTextButton() {
+    return TextButton(
+      onPressed: theLotteryNumber,
+      child: Text(appStrings.Again,
+          style: textStyles().myText(myColors.again, componentSize.textSize)),
     );
   }
 }
