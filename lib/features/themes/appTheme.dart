@@ -14,14 +14,20 @@ class appTheme {
       color: myColors.cardColor,
     ),
     textButtonTheme: TextButtonThemeData(
-      style: ButtonStyle(
-        textStyle: WidgetStateProperty.all(
-          TextStyle(
-            fontSize: componentSize.textSize
-          ),
-        ),
-        foregroundColor: WidgetStateProperty.all(myColors.again)
+      style: TextButton.styleFrom(
+        foregroundColor: myColors.again,
+        textStyle: TextStyle(
+          fontSize: componentSize.textSize
+        )
       )
+      // style: TextButton.styleFrom(
+      //   textStyle: WidgetStateProperty.all(
+      //     TextStyle(
+      //       fontSize: componentSize.textSize
+      //     ),
+      //   ),
+      //   foregroundColor: WidgetStateProperty.all(myColors.again)
+      // )
     ),
   );
  }
