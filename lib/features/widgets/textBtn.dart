@@ -9,6 +9,6 @@ TextButton buildTextButton(void Function() theLotteryNumber) {
   return TextButton(
     onPressed: theLotteryNumber,
     child: Text(appStrings.Again,
-        style: textStyles().myText(myColors.again, componentSize.textSize)),
+    ),
   );
 }
