@@ -8,6 +8,7 @@ import 'package:lottery/components/sizedBox.dart';
 import 'package:lottery/features/themes/colors.dart';
 import 'package:lottery/features/widgets/lotteryButtn.dart';
 import 'package:lottery/features/widgets/messageText.dart';
+import 'package:lottery/features/widgets/textBtn.dart';
 
 import '../components/styles.dart';
 
@@ -63,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: containerBorder.myHeight(context),
                             decoration: containerBorder.cDecoration,
                             child: currentNumber == 3
-                                ? buildTextButton()
+                                ? buildTextButton(theLotteryNumber)
                                 : buildLotteryBtn(theLotteryNumber),
                           ),
                         ),
@@ -78,11 +79,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  TextButton buildTextButton() {
-    return TextButton(
-      onPressed: theLotteryNumber,
-      child: Text(appStrings.Again,
-          style: textStyles().myText(myColors.again, componentSize.textSize)),
-    );
-  }
 }
