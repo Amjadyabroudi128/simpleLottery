@@ -1,6 +1,7 @@
 
  import 'package:flutter/material.dart';
 import 'package:lottery/components/appSizeHelper.dart';
+import 'package:lottery/components/styles.dart';
 
 import 'colors.dart';
 
@@ -11,6 +12,16 @@ class appTheme {
     ),
     cardTheme: CardTheme(
       color: myColors.cardColor,
-    )
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: ButtonStyle(
+        textStyle: WidgetStateProperty.all(
+          TextStyle(
+            fontSize: componentSize.textSize
+          ),
+        ),
+        foregroundColor: WidgetStateProperty.all(myColors.again)
+      )
+    ),
   );
  }
