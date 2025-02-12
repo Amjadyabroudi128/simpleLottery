@@ -20,14 +20,6 @@ class appTheme {
           fontSize: componentSize.textSize
         )
       )
-      // style: TextButton.styleFrom(
-      //   textStyle: WidgetStateProperty.all(
-      //     TextStyle(
-      //       fontSize: componentSize.textSize
-      //     ),
-      //   ),
-      //   foregroundColor: WidgetStateProperty.all(myColors.again)
-      // )
     ),
   );
  }
